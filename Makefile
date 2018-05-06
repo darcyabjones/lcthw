@@ -1,4 +1,5 @@
-CFLAGS=-Wall -g
+CFLAGS=-Wall -g -DNDEBUG
+# Remove NDEBUG to disable debug logging
 
 %: %.c
 	cc ${CFLAGS} $< -o $@ 
